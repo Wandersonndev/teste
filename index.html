@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagens flexíveis</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images-300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="images-700.jpg" type="image/jpg">
+        <img src="images-1000.jpg" alt="Imagen">
+    </picture>
+    <p>Usa se a tag &lt;picture&gt; e &lt;source&gt; </p>
+    <h2>Audio</h2>
+    <audio preload="metadata" controls loop>
+        <source src="Powfu.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta áudio <a href="Powfu.mp3" download="Powfu.mp3" type="audio/mpeg"></a></p>
+    </audio>
+    <p>Usa a tag &lt;audio&gt;</p> 
+    <p>‣ O atributo preload indica se o áudio será pré-carregado ou não e aceita três
+        valores: </p>
+        <ul type="circle">
+            <li><strong>metadata</strong> vai carregar apenas as informações sobre o arquivo (tamanho,
+                tempo, informações de direitos, etc)</li>
+            <li><strong>none</strong> não vai carregar absolutamente nada até que o usuário clique no botão
+                play ou um script inicie a reprodução</li>
+            <li><strong>auto</strong> (padrão) vai carregar o arquivo de áudio inteiro assim que a página for
+                carregada, mesmo que o usuário nunca aperte o play </li>
+        </ul>
+
+        <p>‣O atributo <strong>controls</strong> vai apresentar o player na tela. Caso não seja colocado na tag
+    
+        &lt;audio&gt;, o controle será transparente e o usuário não poderá interagir com ele. <br>
+        ‣ O atributo <strong>autoplay</strong>, quando inserido, vai iniciar a reprodução do áudio assim que
+        a página for carregada. <br>
+        ‣ O atributo<strong> loop</strong> vai fazer com que o áudio seja repetido eternamente assim que
+        terminar a sua reprodução</p>
+
+
+        <h2>Vídeos</h2>
+        <video width="300" poster="pica-pal.png" controls>
+            <source src="picapal.mp4" type="video/mp4">
+            <p>Infelismente o seu navegador não conseguiu carregar o vídeo.</p>
+        </video>
+
+        <p>Use a tag &lt;video&gt;</p>
+        <p>‣<strong> width</strong> vai indicar a largura que o vídeo vai ter na tela. Nesse exemplo, 600px. <br>
+            ‣ <strong>poster</strong> configura uma imagem que vai aparecer como uma capa, enquanto o
+            visitante não aperta o play para reproduzir o vídeo <br>
+            ‣ <strong>controls</strong> vai configurar se os controles do vídeo vão aparecer na parte inferior da
+            mídia. Por padrão, os controles não aparecerão, mas basta colocar a palavra
+            controls na tag &lt;video&gt;. <br>
+            ‣ <strong>autoplay</strong> diz para o navegador se o vídeo vai começar a tocar automaticamente,
+            assim que a página for carregada</p>
+            <h2>Video do Youtube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aXP1gyOa7As" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+<strong></body></strong>
+</html>
